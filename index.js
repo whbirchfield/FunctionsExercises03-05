@@ -48,6 +48,23 @@ console.log(reverseCharactersOrNumbers(myVariableNameOrNumber));
 
 //3) Create a new function with one parameter, which is the array we want to change. The function should:
 
+let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
+let arrayTest2 = [123, 8897, 42, 1168, 8675309];
+let arrayTest3 = ['hello', 'world', 123, 'orange'];
+
+console.log(arrayTest1);
+function changeAnArray (myArray){
+  let newArrayString = "";
+  let newArray = []
+//  for (let i = 0; i<myArray.length; i++){
+    newArrayString +=reverseCharactersOrNumbers(myArray);
+    newArray = newArrayString.split(",");
+//  }
+  return newArray;
+}
+
+
+console.log(changeAnArray(arrayTest1));
 
 //a) Define and initialize an empty array.
 //b) Loop through the old array.
@@ -58,6 +75,4 @@ console.log(reverseCharactersOrNumbers(myVariableNameOrNumber));
 
 
 
-let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
-let arrayTest2 = [123, 8897, 42, 1168, 8675309];
-let arrayTest3 = ['hello', 'world', 123, 'orange'];
+
