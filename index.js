@@ -62,9 +62,7 @@ function changeAnArray (myArray){
 //  }
   return newArray;
 }
-
-
-console.log(changeAnArray(arrayTest1));
+console.log(changeAnArray(arrayTest3));
 
 //a) Define and initialize an empty array.
 //b) Loop through the old array.
